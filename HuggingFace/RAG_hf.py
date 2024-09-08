@@ -5,12 +5,11 @@ import fitz  # PyMuPDF
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from transformers import pipeline  # Import Hugging Face transformers library
+from transformers import pipeline  
 
-# Initialize the Hugging Face text generation pipeline for more elaborate answers
 qa_model = pipeline("text2text-generation", model="google/flan-t5-large")
 
-# Paths to database
+
 DB_PATH = 'chat_history.db'
 
 # Function to initialize the SQLite database
