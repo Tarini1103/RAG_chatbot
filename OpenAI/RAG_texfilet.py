@@ -10,8 +10,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Initialize the Azure OpenAI client
 httpx_client = httpx.Client(verify=False)
 openai_client = AzureOpenAI(
-    api_key="d2323ce0232940d98649e66d446ddec3",
-    api_version="2023-09-15-preview",
+    api_key="your_api_key",
+    api_version="your_api_version",
     azure_endpoint="https://newopenairnd.openai.azure.com/",
     http_client=httpx_client
 )
