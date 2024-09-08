@@ -6,14 +6,19 @@ Hugging Face
 
 Each folder contains implementations of RAG chatbots using the respective AI models and APIs.
 Project Structure
-CopyRAG Chatbot/
+
+RAG Chatbot/
 │
 ├── OpenAI/
 │   ├── RAG_PDF.py
-│   └── RAG_textfile.py
+│   ├── RAG_textfile.py
+│   └── data/
+│       └── context.txt
 │
 └── Hugging Face/
     └── RAG_hf.py
+
+
 Features
 
 Chatbot implementations using RAG technique
