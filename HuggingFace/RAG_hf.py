@@ -170,7 +170,7 @@ def main():
         st.session_state.user_id = np.random.randint(1000, 9999)
         st.session_state.conversation = []
         st.session_state.messages = []
-        st.experimental_rerun()
+        st.rerun()
 
     if st.session_state.user_id is None:
         st.write("Please click 'New User' to start a new conversation.")
@@ -187,7 +187,7 @@ def main():
         if st.sidebar.button("➕", key="new_chat", help="Start a new chat"):
             st.session_state.messages = []
             st.session_state.conversation = []
-            st.experimental_rerun()
+            st.rerun()
 
     for i, (user_q, bot_a) in enumerate(st.session_state.conversation):
         with st.sidebar.expander(f"Q: {user_q}", expanded=False):
